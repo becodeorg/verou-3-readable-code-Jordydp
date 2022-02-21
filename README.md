@@ -1,10 +1,10 @@
 # verou-3-readable-code-Jordydp
 steps i took:
-
-//TODO: check variables for clean name
-//TODO: use camelCase for variables
-//TODO: rewrite function names camelCase;
-//TODO: comment un necessary code 
-//TODO: Rewrite ElseIF
+//TODO: 1. check where program starts
+//TODO: 2. check variables/function for clean name
+//TODO: 3. use camelCase for variables
+//TODO: 4. Remove redundant functions
+//TODO: 5. Rewrite and refactor functions
+/
 
 
