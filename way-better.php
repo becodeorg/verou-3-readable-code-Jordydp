@@ -2,6 +2,7 @@
 //TODO: check variables for clean name
 //TODO: use camelCase for variables
 //TODO: rewrite function names camelCase;
+//TODO: comment un necessary code 
 <?php
 
 // fw = for who
@@ -34,30 +35,30 @@ $price = calc_cts($type);
             return $price;
     }
 
-        function test($p_type) {
-            echo "Test: type is {$p_type}. <br>";
+        function test($pizzaType) {
+            echo "Test: type is {$pizzaType}. <br>";
         }
 
-function calc_cts($p_type)
+function calc_cts($pizzaType)
 {
     $cost = 'unknown';
 
-    if ($p_type == 'marguerita') {
+    if ($pizzaType == 'marguerita') {
         $cost = 5;
     }
     else
         {
-        if ($p_type == 'golden')
+        if ($pizzaType == 'golden')
         {
             $cost = 100;
         }
 
-            if ($p_type == 'calzone')
+            if ($pizzaType == 'calzone')
             {
                 $cost = 10;
             }
 
-        if ($p_type == 'hawaii') {
+        if ($pizzaType == 'hawaii') {
             throw new Exception('Computer says no');
         }
     }
@@ -73,12 +74,11 @@ function orderPizzaForAll()
     orderPizza('golden', 'students');
 }
 
-function makeAllHappy($do_it) {
-if ($do_it) {
+function makeAllHappy($do_it)
+{
+    if ($do_it) {
         orderPizzaForAll();
-    } else {
-        // Should not do anything when false
     }
 }
 
-makeAllHappy(true);
+makeAllHappy();
