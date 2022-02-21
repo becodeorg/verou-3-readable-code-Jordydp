@@ -1,10 +1,4 @@
 <?php
-//TODO: check variables for clean name
-//TODO: use camelCase for variables
-//TODO: rewrite function names camelCase;
-//TODO: comment un necessary code 
-
-
 
 function orderPizza($pizzaType, $forWho)
 {
@@ -19,11 +13,8 @@ function orderPizza($pizzaType, $forWho)
     } elseif ($forWho == 'students') {
         $address = 'BeCode office';
     }
-
-    $toPrint .=   ' pizza should be sent to ' . $forWho . ". <br>The address: {$address}.";
-        echo $toPrint; echo '<br>';
-        echo'The bill is €'.$price.'.<br>';
-        echo "Order finished.<br><br>";
+    $toPrint .=   ' pizza should be sent to ' . $forWho . '. <br>The address: '. $address . '.';
+        echo $toPrint . '<br>' . 'The bill is €' . $price . '.<br>' . 'Order finished.<br><br>';
 }
 
 function calc_cts($pizzaType)
